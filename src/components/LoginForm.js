@@ -9,6 +9,12 @@ class LoginForm extends React.Component {
     };
   }
 
+  onChange = event => {
+    this.setState({
+      username: event.target.value
+    })
+  }
+
   render() {
     return (
       <form>
