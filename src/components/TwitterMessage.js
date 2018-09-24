@@ -11,13 +11,13 @@ class TwitterMessage extends React.Component {
 
   handleChange = event => {
     this.setState({
-      message: event.target.value
+      message: event.target.value,
+      charsLeft: this.props.maxChars - this.state.message.length
     })
   }
 
   charCount = () => {
     this.setState({
-      charsLeft: this.props.maxChars - this.state.message.length
     })
   }
 
